@@ -1,7 +1,7 @@
 body {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     text-align: center;
-    background-image: url('fotos/fondo2 - Copy.jpg');
+    background-image: url('fotos/fondo2.jpg');
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: contain; /* Ajusta la imagen a su tamaño real */
     min-height: 866vh; /* Asegura que la página tenga al menos la altura del viewport */
