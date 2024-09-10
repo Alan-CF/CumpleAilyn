@@ -1,0 +1,71 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    text-align: center;
+    background-image: url('fotos/fondo2.png');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: contain; /* Ajusta la imagen a su tamaño real */
+    min-height: 866vh; /* Asegura que la página tenga al menos la altura del viewport */
+    padding: 50px;
+    margin: 0;
+    cursor: url('fotos/pie3.png'), auto;
+}
+
+h1 {
+    color: #000000;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Main Heading Styling */
+h2 {
+    color: #1e9603;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.texto-pequeno {
+    font-size: 0.8em; 
+    margin-top: 0;
+    color: #666;
+}
+
+.fixed-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    padding: 10px 10px; 
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    z-index: 1000; 
+    box-sizing: border-box; 
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+}
+   
+img {
+     max-width: 70%;
+     max-height:70%;
+}
+   
+.boton-imagen {
+    width: 100px; /* Ajusta el tamaño del botón */
+    height: 100px;
+    background-image: url('fotos/botonrojo.png');
+    background-size: cover; /* La imagen cubre completamente el botón */
+    background-position: center;
+    background-color: transparent;
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer;
+}
+   
