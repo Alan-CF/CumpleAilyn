@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puto el q lo lea</title>
-    <!-- <link rel="preload" href="fotos/fondo2.png" as="image"> -->
     <link rel="stylesheet" href="blogStyles.css">
 </head>
 <body>
-    <audio autoplay loop>
+
+    <div class="header-container">
+        <img id="toggleButton" src="fotos/unmute.webp" alt="Play">
+    </div>
+    
+    <audio id="audioPlayer" src="Aphex Twin - I.mp3" loop></audio>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+        let isPlaying = false;
+
+        toggleButton.addEventListener('click', () => {
+            if (isPlaying) {
+                audioPlayer.pause();
+                toggleButton.src = 'fotos/unmute.webp'; // Cambia a imagen de play
+            } else {
+                audioPlayer.play();
+                toggleButton.src = 'fotos/mute.webp'; // Cambia a imagen de pausa
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+
+    <!-- <audio autoplay loop>
         <source src="Aphex Twin - I.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
 
     <h1 style="margin-top: 125px;">Blog de Ailyn</h1>
     <div class="fixed-footer">De: Yaco<br>Para: Ailyn &lt3</div>

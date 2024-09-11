@@ -56,3 +56,19 @@ p {
     color: #666;
 }
 
+.header-container {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+}
+
+#toggleButton {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+}
+

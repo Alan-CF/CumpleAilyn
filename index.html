@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio autoplay loop id="musica1">
-        <source src="musicaWiiRnB.mp3" type="audio/mpeg">
-    </audio>
+
+    <div class="header-container">
+        <img id="toggleButton" src="fotos/unmute.webp" alt="Play">
+    </div>
+    
+    <audio id="audioPlayer" src="musicaWiiRnB.mp3" loop></audio>
 
     <script>
-        window.addEventListener('load', function() {
-          var audio = document.getElementById('myAudio');
-          audio.play().catch(function(error) {
-            console.log('La reproducción automática falló: ' + error);
-          });
+        const toggleButton = document.getElementById('toggleButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+        let isPlaying = false;
+
+        toggleButton.addEventListener('click', () => {
+            if (isPlaying) {
+                audioPlayer.pause();
+                toggleButton.src = 'fotos/unmute.webp'; // Cambia a imagen de play
+            } else {
+                audioPlayer.play();
+                toggleButton.src = 'fotos/mute.webp'; // Cambia a imagen de pausa
+            }
+            isPlaying = !isPlaying;
         });
-      </script>
+    </script>
 
     <h1>Hola Ailyn!!!</h1>
     <h2>
