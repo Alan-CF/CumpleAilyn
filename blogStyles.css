@@ -4,11 +4,11 @@ body {
     background-image: url('fotos/fondo2.jpg');
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: contain; /* Ajusta la imagen a su tamaño real */
-    min-height: 1000vh; /* Asegura que la página tenga al menos la altura del viewport */
+    min-height: 1300vh; /* Asegura que la página tenga al menos la altura del viewport */
     padding: 10px;
     margin: 0;
     cursor: url('fotos/pie3.png'), auto;
-    background-color: rgb(154, 217, 234);
+    background-color: rgb(14, 62, 74);
 }
 
 h1 {
