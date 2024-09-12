@@ -74,3 +74,26 @@ img {
     height: 40px;
     margin-right: 50px;
 }
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px); /* Ajusta el tamaño según tus imágenes */
+    grid-template-rows: repeat(2, 400px); /* Ajusta el tamaño según tus imágenes */
+    justify-items: center; /* centers items horizontally */
+    align-items: center; /* centers items vertically */
+    gap: 0px; /* Espacio entre imágenes */
+}
+
+.grid img {
+    width: 650px;
+    height: 650px;
+    height: auto;
+    display: block;
+}
