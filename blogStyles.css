@@ -58,17 +58,6 @@ img {
      max-width: 70%;
      max-height:70%;
 }
-   
-.boton-imagen {
-    width: 100px; /* Ajusta el tamaño del botón */
-    height: 100px;
-    background-image: url('fotos/botonrojo.png');
-    background-size: cover; /* La imagen cubre completamente el botón */
-    background-position: center;
-    background-color: transparent;
-    border: none; /* Elimina el borde del botón */
-    cursor: pointer;
-}
 
 .header-container {
     width: 100%;
